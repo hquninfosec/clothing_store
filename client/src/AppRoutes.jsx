@@ -11,12 +11,13 @@ import Orders from "./admin/Orders"
 import Users from "./admin/Users"
 import Reports from "./admin/Reports"
 import NotFound from "./pages/NotFound"
+import Wishlist from "./pages/Wishlist"
+import Register from "./pages/Register"
 
 
-const routes = () =>
+const AppRoutes = () => 
 {
-    return 
-    (
+    return (
         <Routes>
             {/* Public */}
             <Route path="/" element={<Homepage />} />
@@ -44,3 +45,5 @@ const routes = () =>
         </Routes>
     )
 }
+
+export default AppRoutes
